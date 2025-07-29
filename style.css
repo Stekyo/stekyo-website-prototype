@@ -1,0 +1,178 @@
+/* General styles */
+body {
+  max-width: 2550px;  /* maximale Breite (kannst du anpassen) */
+  margin: 0 auto;     /* zentriert horizontal */
+  padding: 0 px;    /* Abstand zum Rand, falls kleiner Bildschirm */
+  box-sizing: border-box;
+  background: linear-gradient(rgb(134, 86, 134), rgb(70, 40, 74))
+}
+
+.logo  {
+  background-color: black;
+}
+
+.logo a {
+  display: flex;
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+  justify-content: center; 
+}
+
+.navbar {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 100px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+
+}
+
+.personal {
+  display: flex;
+  gap: 10px;
+}
+
+.personal a img {
+  width: 50px;
+  height: 50px;
+}
+
+
+/* Container für das bild unter dem header */
+.bild {
+  width: 100%;
+}
+
+/* Styling für das bild unter dem header */
+.bild img {
+
+}
+
+/* Container rund um die Suche */
+.container {
+  margin-bottom: 40px;
+}
+
+/* Container für die Suchliste */
+.search {
+  width: 400px;        
+  margin: 0 auto;   
+  padding: 10px;
+  align-items: center;
+}
+
+/* Styling für das Suchfeld */
+.search input[type="text"] {
+  width: 100%;        
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 3px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Container für die Suchfelder BPM usw */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Styling für die Suchfelder BPM usw */
+form input[type="text"],
+form input[type="number"] {
+  width: 150px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 3px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.beat-list {
+  display: flex;
+  flex-direction: column; /* Items untereinander */
+  gap: 20px;              /* Abstand zwischen den Beats */
+  max-width: 800px;
+  margin: 0 auto;         /* Zentriert die Liste */
+}
+
+.beat-item {
+  display: flex;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  align-items: center;
+  gap: 15px;
+}
+
+.beat-cover {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.beat-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.beat-info p {
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #e91e63;
+  align-self: flex-end;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #2196f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #1976d2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  margin-top: 40px;
+}
+
+footer div,
+footer div a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  
+}

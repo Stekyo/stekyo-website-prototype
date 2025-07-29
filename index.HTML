@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Stekyo Beats</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header> <!-- Header links einfügen  -->
+            <div class="logo">   <!-- Logo oder text weiß ich noch nicht  -->
+                <a href="Beats website/index.HTML"><img src="pictures\Stekyo.png" width="650"></a>
+            </div>
+            <nav class="navbar"> 
+                <div class="header-links">   
+                    <a href="beats.html">Beats</a>
+                    <a href="samples.html">Samples</a>
+                    <a href="one-shots.html">One Shots</a>
+                </div>
+                <div class="personal"> <!-- wird ersetzt durch kleine logos einkaufswagen usw  -->
+                    <a href="profile.html"><img src="pictures\profile.png" alt="" ></a>
+                    <a href="saved.html"><img src="pictures\save.png" alt="" ></a>
+                    <a href="shopping-cart.html"><img src="pictures\Shopping Cart.png" alt="" ></a>
+                </div>
+            </nav>
+            <div> <!-- video  -->
+                <img class="bild" src="pictures\panorama-blac.jpg" alt="Video Thumbnail" />
+            </div>
+        </header>
+        <main>
+            <div class="container"> <!-- Container für Suchleiste und Filter  -->
+                <div class="search"> <!-- Suche  -->
+                    <form action=search.html method="get">
+                        <label for="search"></label>
+                        <input type="text" id="search" name="search" placeholder="Search for beats, samples, etc." required>
+                    </form>
+                </div>
+                <br>
+                <form> <!-- Filters  -->
+                    <label for="genre"></label>
+                    <input id="genre" name="genre" type="text" placeholder="Select genre" list="genre-list" > 
+                    <datalist id="genre-list">
+                        <!-- genre list -->
+                        <option value="hiphop"></option>
+                        <option value="trap"></option>
+                        <option value="lofi"></option>
+                        <option value="electronic"></option>
+                        <option value="jazz"></option>
+                        <option value="rock"></option>
+                        <option value="pop"></option>
+                    </datalist>
+                    <br>
+                    <label for="BPM"></label>
+                    <input id="BPM" name="BPM" type="number" placeholder="Enter BPM" list="BPM-list" min="60" max="200">
+                    <datalist id="BPM-list">
+                        <!-- BPM list -->
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100"></option>
+                        <option value="110"></option>
+                        <option value="120"></option>
+                        <option value="130"></option>
+                        <option value="140"></option>
+                        <option value="150"></option>
+                        <option value="160"></option>
+                        <option value="170"></option>
+                        <option value="180"></option>
+                        <option value="190"></option>
+                        <option value="200"></option>
+                    </datalist>
+                    <br> 
+                    <label for="Key"></label>
+                    <input id="Key" name="Key" type="text" placeholder="Enter Key" list="notes-list">
+                    <datalist id="notes-list">
+                        
+                        <!-- Major Keys -->
+                        <option value="C major">
+                        <option value="C# major">
+                        <option value="D major">
+                        <option value="D# major">
+                        <option value="E major">
+                        <option value="F major">
+                        <option value="F# major">
+                        <option value="G major">
+                        <option value="G# major">
+                        <option value="A major">
+                        <option value="A# major">
+                        <option value="B major">
+                        <!-- Minor Keys -->
+                        <option value="C minor">
+                        <option value="C# minor">
+                        <option value="D minor">
+                        <option value="D# minor">
+                        <option value="E minor">
+                        <option value="F minor">
+                        <option value="F# minor">
+                        <option value="G minor">
+                        <option value="G# minor">
+                        <option value="A minor">
+                        <option value="A# minor">
+                        <option value="B minor">
+                    </datalist>
+                </form>
+            </div>  
+            <div>  <!-- Beats  -->          
+                <div class="beat-list">
+                    <div class="beat-item">
+                        <img src="pictures\0093cda7b012e7c3d4cbc52f6c284ce4.jpg" alt="Beat 1 Cover" class="beat-cover">
+                        <div class="beat-info">
+                        <h3>Beat Titel 1</h3>
+                        <p>Beschreibung des Beats oder Genre</p>
+                        <p class="price">€29.99</p>
+                        <a href="beat1.html" class="btn">Mehr Infos</a>
+                        </div>
+                    </div>
+                    <div class="beat-item">
+                        <img src="pictures\d9bf28c2-8fb0-4ad6-9537-546bf6f91c37.jfif" alt="Beat 1 Cover" class="beat-cover">
+                        <div class="beat-info">
+                        <h3>Beat Titel 1</h3>
+                        <p>Beschreibung des Beats oder Genre</p>
+                        <p class="price">€29.99</p>
+                        <a href="beat1.html" class="btn">Mehr Infos</a>
+                        </div>
+                    </div>
+                    <div class="beat-item">
+                        <img src="pictures\a great chaos wallpaper.jfif" alt="Beat 1 Cover" class="beat-cover">
+                        <div class="beat-info">
+                        <h3>Beat Titel 1</h3>
+                        <p>Beschreibung des Beats oder Genre</p>
+                        <p class="price">€29.99</p>
+                        <a href="beat1.html" class="btn">Mehr Infos</a>
+                        </div>
+                    </div>
+                    <div class="beat-item">
+                        <img src="pictures\Ariana Grande.jfif" alt="Beat 1 Cover" class="beat-cover">
+                        <div class="beat-info">
+                        <h3>Beat Titel 1</h3>
+                        <p>Beschreibung des Beats oder Genre</p>
+                        <p class="price">€29.99</p>
+                        <a href="beat1.html" class="btn">Mehr Infos</a>
+                        </div>
+                    </div>
+                    <div class="beat-item">
+                        <img src="pictures\Download (6).jfif" alt="Beat 1 Cover" class="beat-cover">
+                        <div class="beat-info">
+                        <h3>Beat Titel 1</h3>
+                        <p>Beschreibung des Beats oder Genre</p>
+                        <p class="price">€29.99</p>
+                        <a href="beat1.html" class="btn">Mehr Infos</a>
+                        </div>
+                    </div>
+                    <div class="beat-item">
+                        <img src="pictures/post malone.jfif" alt="Beat 1 Cover" class="beat-cover">
+                        <div class="beat-info">
+                        <h3>Beat Titel 1</h3>
+                        <p>Beschreibung des Beats oder Genre</p>
+                        <p class="price">€29.99</p>
+                        <a href="beat1.html" class="btn">Mehr Infos</a>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
+        </main>
+        <footer>
+            <div> <!-- Socials  -->
+                <a href="https://example.com/privacy">Instagram</a>
+                <a href="https://example.com/terms">Youtube</a>
+                <a href="https://example.com/contact">Tiktok</a>
+            </div>
+            <div> <!-- Privacy Policy  -->
+                <p>© 2023 Stekyo Beats. All rights reserved.</p>
+            <div> <!-- Payment  -->
+
+            </div>
+        </footer> 
+    </body>
+</html>
